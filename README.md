@@ -55,6 +55,7 @@ charge on iOS, Android and the web. Replace it with yours.
 | `ui.toml` | Frameworks, plist entries, permissions, Maven libraries, Swift packages, receivers. |
 | `tests/mypackage.esk` | Tests that run on the computer: stand-ins for the externs, and the events a platform would send. |
 | `examples/demo` | An app that uses the package, with the package as a path dependency. |
+| `docs/api.md` | The API reference, made from the comments in `src/` by `tools/gen_api.py` (run `python3 -I tools/gen_api.py` after changing them; CI checks it is current and that every public declaration has a comment). |
 | `.github/workflows/ci.yml` | The tests on Linux and macOS, and the example type-checked. |
 
 ## How the parts talk
@@ -85,6 +86,10 @@ Eskiu  use_native_event("mypackage", ...) ──▶ the scope renders again
 the whole platform side: `ui_view_controller()` and `UiActivity.startForResult` to present
 system screens, `UiActivity.requestPermissions`, `UiActivity.onIntent`, Gradle and Swift
 packages.
+
+## Documentation
+
+Every public function and type, with its documentation, is in the [API reference](docs/api.md).
 
 ## License
 
