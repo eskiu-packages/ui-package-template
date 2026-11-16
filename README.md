@@ -3,11 +3,11 @@
 </p>
 
 <h2 align="center">ui-package-template</h2>
-<p align="center">A starting point for a package with native code, for apps on eskiu-lang/ui.</p>
+<p align="center">A starting point for a package with native code, for apps on eskiu-packages/ui.</p>
 <p align="center"><sub>Part of the <a href="https://github.com/eskiu-lang">Eskiu</a> project</sub></p>
 
 <p align="center">
-  <a href="https://github.com/eskiu-lang/ui-package-template/actions/workflows/ci.yml"><img src="https://github.com/eskiu-lang/ui-package-template/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/eskiu-packages/ui-package-template/actions/workflows/ci.yml"><img src="https://github.com/eskiu-packages/ui-package-template/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT"></a>
 </p>
 
@@ -17,13 +17,13 @@ A package that brings a platform service to every app that adds it: Eskiu functi
 Objective-C, Java (or Kotlin, C) and JavaScript underneath, and a `ui.toml` with what the
 platforms need. The template's package works as it is: `use_battery()` reports the battery's
 charge on iOS, Android and the web. Replace it with yours.
-[location](https://github.com/eskiu-lang/ui-location),
-[notifications](https://github.com/eskiu-lang/ui-notifications),
-[camera](https://github.com/eskiu-lang/ui-camera),
-[barcode](https://github.com/eskiu-lang/ui-barcode),
-[pedometer](https://github.com/eskiu-lang/ui-pedometer),
-[securestore](https://github.com/eskiu-lang/ui-securestore) and
-[svg](https://github.com/eskiu-lang/ui-svg) are built the same way.
+[location](https://github.com/eskiu-packages/ui-location),
+[notifications](https://github.com/eskiu-packages/ui-notifications),
+[camera](https://github.com/eskiu-packages/ui-camera),
+[barcode](https://github.com/eskiu-packages/ui-barcode),
+[pedometer](https://github.com/eskiu-packages/ui-pedometer),
+[securestore](https://github.com/eskiu-packages/ui-securestore) and
+[svg](https://github.com/eskiu-packages/ui-svg) are built the same way.
 
 ## Start
 
@@ -82,7 +82,7 @@ Eskiu  use_native_event("mypackage", ...) ──▶ the scope renders again
 - **Native views** are `NativeView(style, "type", on_event)` in Eskiu and a factory each
   platform registers: see `CameraView` in camera.
 
-[Native code](https://github.com/eskiu-lang/ui/blob/main/docs/native.md) in the ui docs has
+[Native code](https://github.com/eskiu-packages/ui/blob/main/docs/native.md) in the ui docs has
 the whole platform side: `ui_view_controller()` and `UiActivity.startForResult` to present
 system screens, `UiActivity.requestPermissions`, `UiActivity.onIntent`, Gradle and Swift
 packages.
